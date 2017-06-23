@@ -37,3 +37,20 @@ ul.social-buttons li a:focus,
 ul.social-buttons li a:active {
   background-color: #42DCA3;
 }
+.service-heading {
+  margin: 15px 0;
+  text-transform: none;
+}
+.text-muted {
+  color: white;
+  font-family: sans-serif;
+  font-size: 14px;
+}
+.text-primary {
+  color: #0B8774;
+}
+.imgteamsize {
+  height: 100px;
+  width: 100px;
+}
+
