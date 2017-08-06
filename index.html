@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="keywords" content="isamcorp, isam, business intelligence, design, web, sistemas, Mecanica, civil, industrial, tecnologias">
     <title>ISAMCORP</title>
 
     <!-- Bootstrap -->
@@ -14,18 +15,32 @@
     <!-- Theme grayscale CSS -->
     <link href="public/grayscale/css/grayscale.css" rel="stylesheet">
     <link href="public/grayscale/css/agency.css" rel="stylesheet">
+    <link href="public/grayscale/css/animate.min.css" rel="stylesheet">
+    <link href="public/grayscale/css/responsive.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/ico" href="https://s3-sa-east-1.amazonaws.com/isamcorp.com/public/images/favicon.ico" />
 
   </head>
   <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+    <!--.preloader-->
+    <div id="contenedor_carga">
+        <!--<div id="carga"></div>-->
+        <div class="spinner">
+            <div class="double-bounce1"></div>
+            <div class="double-bounce2"></div>
+        </div>
+    </div>
     <!-- Navigation -->
     <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
         <div class="container">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                    <i class="fa fa-bars"></i>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand page-scroll" href="#page-top">
-                    <span style="color:#0AA890; font-size:20px">ISAM</span><span class="light" style= "font-size:20px">C</span><i class="fa fa-circle" style= "font-size:20px"></i><span class="light" style= "font-size:21px">RP</span>
+                    <span><img class="brand-logo-menu" src="public/images/logo/isamcorp-logo-white-v2.png" alt="logo-menu"></span>
                 </a>
             </div>
 
@@ -48,12 +63,12 @@
                     <li>
                         <a class="page-scroll" href="#team">Nuestro Equipo</a>
                     </li>
-                    <li>
+                    <!--<li>
                         <a class="page-scroll" href="#solution">Soluciones</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#customer">Clientes</a>
-                    </li>
+                    </li>-->
                     <li>
                         <a class="page-scroll" href="#contact">Contacto</a>
                     </li>
@@ -65,16 +80,50 @@
     </nav>
 
     <!-- Intro Header -->
-    <header class="intro">
+    <header id="home">
+        <div id="home-slider" class="carousel slide carousel-fade" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="item active" style="background-image: url(public/images/home/1.jpg)">
+                <div class="caption">
+                    <h2 class="animated fadeInLeftBig">¿Amas sitios web hermosos y a medida de tu negocio?</h2>
+                    <p class="animated fadeInRightBig">¿Deseas usar información almacenada en tu negocio para tomar decisiones estratégicas?</p>
+                    <a data-scroll class="btn btn-start animated fadeInUpBig page-scroll" href="#about">Nosostros sabemos como ... y lo hacemos!</a>
+                </div>
+                </div>
+                <div class="item" style="background-image: url(public/images/home/2.jpg)">
+                <div class="caption">
+                    <h2 class="animated fadeInLeftBig">¿Te gustaría automatizar tus procesos manuales?</span></h2>
+                    <p class="animated fadeInRightBig">¿Quiseras realizar mantenimiento de tus maquinas industriales?</p>
+                    <a data-scroll class="btn btn-start animated fadeInUpBig page-scroll" href="#about">Nosostros sabemos como ... y lo hacemos!</a>
+                </div>
+                </div>
+                <div class="item" style="background-image: url(public/images/home/3.jpg)">
+                <div class="caption">
+                    <h2 class="animated fadeInLeftBig">¿Necesitas diseñar y desarrollar proyectos y obras civiles?</h2>
+                    <p class="animated fadeInRightBig">Conoce mas sobre nosotros</p>
+                    <a data-scroll class="btn btn-start animated fadeInUpBig page-scroll" href="#about">Nosostros sabemos como ... y lo hacemos!</a>
+                </div>
+                </div>
+            </div>
+            <a class="left-control" href="#home-slider" data-slide="prev"><i class="fa fa-angle-left"></i></a>
+            <a class="right-control" href="#home-slider" data-slide="next"><i class="fa fa-angle-right"></i></a>
+
+            <a id="tohash" href="#about" class="page-scroll"><i class="fa fa-angle-down"></i></a>
+        </div><!--/#home-slider-->
+    </header><!--/#home-->
+
+    <!--<header class="intro">
         <div class="intro-body">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-8 col-md-offset-2"><br>
-                        <h1 class="brand-heading"><span style="color:#0AA890">ISAM</span><span class="light">C</span><i class="fa fa-circle"></i><span class="light">RP</span></h1>
-                        <p class="intro-text">¿Amas sitios web hermosos y a medida?
-                            <br>¿Quisieras automatizar tus procesos manuales?
+                    <div class="col-md-8 col-md-offset-2">
+                        <img class="brand-logo" src="public/images/logo/isamcorp-logo-white-v2.png"><br><br>
+                        <p class="intro-text">¿Amas sitios web hermosos y a medida de tu negocio?
+                            <br>¿Te gustaría automatizar tus procesos manuales?
                             <br>¿Deseas usar información almacenada en tu negocio para tomar decisiones estratégicas?
-                            <br>Nosostros sabemos como ... y lo construimos!
+                            <br>¿Quiseras realizar el mantenimiento de tus maquinas industriales?
+                            <br>¿Necesitas diseñar y desarrollar proyectos y obras civiles?
+                            <br>Nosostros sabemos como ... y lo hacemos!
                             <br>Conoce mas sobre nosotros.</p>
                         <a href="#about" class="btn btn-circle page-scroll">
                             <i class="fa fa-angle-double-down animated"></i>
@@ -83,7 +132,7 @@
                 </div>
             </div>
         </div>
-    </header>
+    </header>-->
 
     <!-- About Section -->
     <section id="about" class="container content-section text-center">
@@ -91,42 +140,14 @@
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>Nosotros</h2>
                 <p>ISAMCORP es una compañía especializada en desarrollo de sistemas de la información, en consultoría de negocios, prestación de servicios tecnológicos y outsourcing, automatización de procesos industriales y servicios de construcción.</p>
-                <p>Nuestro slogan "incrementar la competitividad de tu empresa contigo" refleja nuestro esfuerzo por comprometernos a los objetivos de negocio de nuestros clientes.</p>
+                <p>Nuestro slogan "te guiamos en tu crecimiento" refleja nuestro esfuerzo por comprometernos a los objetivos de negocio de nuestros clientes.</p>
             </div>
         </div>
     </section>
 
     <!-- Services Section -->
-    <!--<section id="download" class="content-section text-center">
-        <div class="download-section">
-            <div class="container">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <h2>Servicios</h2>
-                    <p>Somos una compañía que pone a disposición la tecnología de la información y automatización para que le ayuden a mejorar el funcionamiento de su negocio y así obtener una ventaja competitiva y una mayor rentabilidad.</p>
-                    <ul class="list-inline banner-social-buttons">
-                        <li>
-                            <a href="#"><i class="fa fa-window-restore fa-5x"></i> <span class="network-name"><br>Diseño a medida</span></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-laptop fa-5x"></i> <span class="network-name"><br>Desarrollo de sistemas</span></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-desktop fa-5x"></i> <span class="network-name"><br>Automatizacion de procesos</span></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-area-chart fa-5x"></i> <span class="network-name"><br>Análisis y Diseño de soluciones</span></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-database fa-5x"></i> <span class="network-name"><br>Gestion Base de datos</span></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>-->
-
     <section id="service" class="content-section text-center">
-        <div class="download-section">
+        <div class="service-section">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
@@ -135,181 +156,172 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="col-md-4">
-                            <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                                <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
-                            </span>
-                            <h4 class="service-heading">E-Commerce</h4>
-                            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                    <div class="col-sm-12">
+                        <div class="col-sm-4">
+                            <div class="service-gallery">
+                                <img src="public/images/services/1.jpg" alt="img-1" width="600" height="400">   
+                                <div class="service-desc">​
+                                    <h4 class="service-heading">​Automatizacion en vision artificial</h4>
+                                    Control de calidad mediante visión artificial. 
+                                    Empaquetado de productos. 
+                                    Colocar en una orientación objetos que están en diferentes posiciones. 
+                                    Clasificación de productos mediante colores y formas. 
+                                    Clasificación de frutas para el consumo masivo.
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-md-4">
-                            <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                                <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
-                            </span>
-                            <h4 class="service-heading">Responsive Design</h4>
-                            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                        <div class="col-sm-4">
+                            <div class="service-gallery">
+                                <img src="public/images/services/2.jpg" alt="img-2" width="600" height="400">   
+                                <div class="service-desc">​
+                                    <h4 class="service-heading">​Mantenimiento Industrial</h4>
+                                    Mantenimiento de equipos industriales.
+                                    Construccion de estructuras metalicas.
+                                    Trabajos en soldaduras TIG, MIG, TAG.
+                                </div>
+                            </div>
+                        </div>                
+                        <div class="col-sm-4">
+                            <div class="service-gallery">
+                                <img src="public/images/services/3.jpg" alt="img-3" width="600" height="400">   
+                                <div class="service-desc">​
+                                    <h4 class="service-heading">PLC-Controlador Logico Programable</h4>
+                                    Programación con PLC Siemens, Allen Bradley, Schneider y Delta. Comunicación Profibus,  Profinet, Ethernet IP, Modbus, DeviceNet y OPC. Integración de sensores, VDF, Servomotores, sistemas neumáticos e hidráulicos con  PLC y HMI. Diseño y construcción de tableros eléctricos de control.
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-md-4">
-                            <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                                <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
-                            </span>
-                            <h4 class="service-heading">Web Security</h4>
-                            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                    </div>                                
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="col-sm-4">
+                            <div class="service-gallery">
+                                <img src="public/images/services/9.jpg" alt="img-9" width="600" height="400">   
+                                <div class="service-desc">​
+                                    <h4 class="service-heading">​Proceso Industrial  Automatizado</h4>
+                                    Sistemas de procesos automatizados con PLC, HMI, SCADA y DCS (Sistema de Control Distribuido). Automatización con robots cartesianos, cilíndricos y antropomórficos(Paletizadores). Control de transportadores inteligentes. Diseño y fabricación de maquinaria automatizada a la medida de su proceso industrial.
+                                </div>
+                            </div>
                         </div>
-                    </div>
+                        <div class="col-sm-4">
+                            <div class="service-gallery">
+                                <img src="public/images/services/4.jpg" alt="img-4" width="600" height="400">   
+                                <div class="service-desc">​
+                                    <h4 class="service-heading">​Diseño y Proyectos de partes y maquinarias metalmecanicas</h4>
+                                    Levantamiento técnico de información.
+                                    Layout mecánico-eléctrico.
+                                    Estudio de casos.
+                                    Ingeniería de detalle.
+                                    Diseño, montaje y mantenimiento de equipos industriales.
+                                </div>
+                            </div>
+                        </div>                
+                        <div class="col-sm-4">
+                            <div class="service-gallery">
+                                <img src="public/images/services/5.jpg" alt="img-5" width="600" height="400">   
+                                <div class="service-desc">​
+                                    <h4 class="service-heading">​Diseño de Proyectos y Obras Civiles</h4>
+                                    Diseño y construcción de canales de regadío.
+                                    Diseño y construcción de viviendas urbanas y rurales.
+                                    Cimentaciones para equipos industriales.
+                                    Diseño y construcción de naves estructurales.
+                                    Obras civiles en general.
+                                </div>
+                            </div>
+                        </div>
+                    </div>                                
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="col-sm-4">
+                            <div class="service-gallery">
+                                <img src="public/images/services/6.jpg" alt="img-6" width="600" height="400">   
+                                <div class="service-desc">​
+                                    <h4 class="service-heading">​Sistemas Analiticos</h4>
+                                    ​Desarrollo e implementación de sistemas de inteligencia de negocios para la toma de decisiones a nivel estratégico.
+                                    ​Implementación de sistemas de información analíticos para pronosticar variables de oportunidad de negocio, análisis de sentimientos en base a la información de las redes sociales.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="service-gallery">
+                                <img src="public/images/services/7.jpg" alt="img-7" width="600" height="400">   
+                                <div class="service-desc">​
+                                    <h4 class="service-heading">​Sistemas en tecnologías de Information</h4>
+                                    Desarrollo e implementación de páginas web a medida de su negocio,
+                                    ​Sistemas de información (sistema de ventas, sistema de almacén, carrito de compras, etc.),
+                                    ​Análisis y reingeniería de procesos de negocio.
+                                    ​Administración e implementación de base de datos con Oracle, Microsoft SQL Server, MySQL, PostgreSQL, MongoDB, etc.
+                                </div>
+                            </div>
+                        </div>                
+                        <div class="col-sm-4">
+                            <div class="service-gallery">
+                                <img src="public/images/services/8.jpg" alt="img-8" width="600" height="400">   
+                                <div class="service-desc">​
+                                    <h4 class="service-heading">​Soluciones en la Nube</h4>
+                                    Desarrollo e implementación de sistemas en la nube usando AWS de Amazon y Microsoft Azure.
+                                    Computacion en la nube.​
+                                    Servicios de outsoursing para su negocio.
+                                </div>
+                            </div>
+                        </div>
+                    </div>                                
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Team Section -->
-    <section id="team" class="container content-section text-center">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>Nuestro Equipo</h2>
-                <p>El equipo humano de ISAMCORP está formado por especialistas altamente cualificados que trabaja estrechamente con nuestros clientes para asegurar el éxito de sus proyectos.</p>
-                <p>Escuchamos sus inquietudes con el fin de mejorar nuestros servicios, adaptándonos a las necesidades de cada negocio.</p>
+    <section id="team" class="text-center">
+        <div class="team-section">
+            <div class="container"> 
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <h2 class="title-color">Nuestro Equipo</h2>
+                        <p>El equipo humano de ISAMCORP está formado por especialistas altamente calificados que trabaja estrechamente con nuestros clientes para asegurar el éxito de sus proyectos y servicios brindados.</p>
+                        <p>Escuchamos sus inquietudes con el fin de mejorar nuestros servicios, adaptándonos a las necesidades de cada negocio.</p>
+                    </div>
+                </div>
+                <!--<div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="col-sm-6">
+                            <div>
+                                <span class="fa-stack fa-4x">
+                                    <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                                    <i class="fa fa-user fa-stack-1x fa-inverse"></i>
+                                </span>
+                                <h4>Neil Bartolo</h4>
+                                <span class="text-muted">Ingeniero de Automatizacion y Robotica</span><br><br>
+                                <ul class="list-inline social-buttons">
+                                    <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div>
+                                <span class="fa-stack fa-4x">
+                                    <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                                    <i class="fa fa-user fa-stack-1x fa-inverse"></i>
+                                </span>
+                                <h4>Nestor Bartolo</h4>
+                                <span class="text-muted">Dibujante Mecanico y Arquitectonico</span><br><br>
+                                <ul class="list-inline social-buttons">
+                                    <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>        -->
+        
             </div>
         </div>
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <div class="col-sm-4">
-                    <div class="team-member">
-                        <!--<img src="public/grayscale/img/team/user3.png" class="img-responsive img-circle imgteamsize" alt="">-->
-                        <span class="fa-stack fa-4x">
-                            <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fa fa-user fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4>Pablo Diaz</h4>
-                        <span class="text-muted">Ingeniero de Sistemas</span><br><br>
-                        <ul class="list-inline social-buttons">
-                            <!--<li><a href="#"><i class="fa fa-twitter"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-facebook"></i></a>
-                            </li>-->
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="team-member">
-                        <!--<img src="public/grayscale/img/team/user3.png" class="img-responsive img-circle imgteamsize" alt="">-->
-                        <span class="fa-stack fa-4x">
-                            <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fa fa-user fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4>Lindsey Bartolo</h4>
-                        <span class="text-muted">Ingeniera Industrial</span><br><br>
-                        <ul class="list-inline social-buttons">
-                            <!--<li><a href="#"><i class="fa fa-twitter"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-facebook"></i></a>
-                            </li>-->
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>                
-                <div class="col-sm-4">
-                    <div class="team-member">
-                        <!--<img src="public/grayscale/img/team/user3.png" class="img-responsive img-circle imgteamsize" alt="">-->
-                        <span class="fa-stack fa-4x">
-                            <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fa fa-user fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4>Juan Carlos Diaz</h4>
-                        <span class="text-muted">Ingeniero informatico</span><br><br>
-                        <ul class="list-inline social-buttons">
-                            <!--<li><a href="#"><i class="fa fa-twitter"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-facebook"></i></a>
-                            </li>-->
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>                                
-        </div>
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <div class="col-sm-6">
-                    <div class="team-member">
-                        <!--<img src="public/grayscale/img/team/user3.png" class="img-responsive img-circle imgteamsize" alt="">-->
-                        <span class="fa-stack fa-4x">
-                            <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fa fa-user fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4>Neil Bartolo</h4>
-                        <span class="text-muted">Ingeniero de Automatizacion y Robotica</span><br><br>
-                        <ul class="list-inline social-buttons">
-                            <!--<li><a href="#"><i class="fa fa-twitter"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-facebook"></i></a>
-                            </li>-->
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <div class="team-member">
-                        <!--<img src="public/grayscale/img/team/user3.png" class="img-responsive img-circle imgteamsize" alt="">-->
-                        <span class="fa-stack fa-4x">
-                            <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fa fa-user fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4>Nestor Bartolo</h4>
-                        <span class="text-muted">Lead Designer</span><br><br>
-                        <ul class="list-inline social-buttons">
-                            <!--<li><a href="#"><i class="fa fa-twitter"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-facebook"></i></a>
-                            </li>-->
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>        
     </section>
 
     <!-- Project Section -->
-    <!--<section id="project" class="content-section text-center">
-        <div class="download-section">
-            <div class="container">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <h2>Soluciones</h2>
-                    <p>Desarrollamos nuestras soluciones de tecnología de la información y automatización adaptándonos a las últimas tendencias tecnológicas, entendiendo nuestra labor como un proceso de mejora continua.</p>
-                    <ul class="list-inline banner-social-buttons">
-                        <li>
-                            <a href="#"><i class="fa fa-university fa-5x"></i> <span class="network-name"><br>Construccion</span></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-industry fa-5x"></i> <span class="network-name"><br>Industria</span></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-microchip fa-5x"></i> <span class="network-name"><br>Robotica</span></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-line-chart fa-5x"></i> <span class="network-name"><br>Inteligencia de Negocios</span></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-database fa-5x"></i> <span class="network-name"><br>Base de datos</span></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>-->
-
-    <section id="solution" class="content-section text-center">
+    <!--<section id="solution" class="content-section text-center">
         <div class="download-section">
             <div class="container">
                 <div class="row">
@@ -348,53 +360,65 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section>-->
 
     <!-- Customer Section -->
-    <section id="customer" class="container content-section text-center">
+    <!--<section id="customer" class="container content-section text-center">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>Clientes</h2>
                 <p>Presentamos a nuestros clientes que hemos brindamos nuestros servicios de soluciones tecnológicos.</p>
                 <ul class="list-inline banner-social-buttons">
                     <li>
-                        <a href="#"><i class="fa fa-envira fa-4x"></i> <span class="network-name"></span></a>
+                        <span class="fa-stack fa-4x">
+                            <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fa fa-envira fa-stack-1x fa-inverse"></i>
+                        </span>
                     </li>
                     <li>
-                        <a href="#"><i class="fa fa-contao fa-4x"></i> <span class="network-name"></span></a>
+                        <span class="fa-stack fa-4x">
+                            <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fa fa-contao fa-stack-1x fa-inverse"></i>
+                        </span>
                     </li>
                     <li>
-                        <a href="#"><i class="fa fa-free-code-camp fa-4x"></i> <span class="network-name"></span></a>
+                        <span class="fa-stack fa-4x">
+                            <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fa fa-free-code-camp fa-stack-1x fa-inverse"></i>
+                        </span>
                     </li>
                     <li>
-                        <a href="#"><i class="fa fa-cc-jcb fa-4x"></i> <span class="network-name"></span></a>
+                        <span class="fa-stack fa-4x">
+                            <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fa fa-cc-jcb fa-stack-1x fa-inverse"></i>
+                        </span>
                     </li>
                 </ul>
             </div>
         </div>
-    </section>
+    </section>-->
 
     <!-- Contact Section -->
-    <section id="contact" class="content-section text-center">
-        <div class="download-section">
+    <section id="contact" class="text-center">
+        <div class="contact-section">
             <div class="container">
                 <div class="col-lg-8 col-lg-offset-2">
                     <h2>Contacto</h2>
-                    <p>Siéntase libre en solicitar mas información sobre nuestros servicios enviandonos sus inquietudes al siguiente correo electronico, estaremos gustosos en atenderlo.</p>
-                    <p><a href="mailto:contacto@isamcorp.com"><i class="fa fa-envelope" aria-hidden="true"></i> contacto@isamcorp.com</a>
+                    <p>Si le gustaria conocer mas sobre nuestros servicios y proyectos siéntase libre en solicitar mas información sobre nosotros enviandonos sus inquietudes al siguiente correo electronico, estaremos gustosos en atenderlo.</p>
+                    <p><a href="mailto:contacto@isamcorp.com"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i> contacto@isamcorp.com</a>
                     </p>
-                    <p>Para conocer mas sobre nuestros servicios y proyectos siguenos en nuestras redes sociales</p>
-                    <ul class="list-inline banner-social-buttons">
+                    <!--<p><i class="fa fa-map-signs fa-2x" aria-hidden="true"></i> Calle Hipolito Unanue, #186, La Soledad, Paramomga, Barranca</p>-->
+                    <!--<ul class="list-inline banner-social-buttons">
                         <li>
-                            <a href="#"><i class="fa fa-facebook-square fa-4x"></i> <span class="network-name"></span></a>
+                            <a href="#"><i class="fa fa-facebook-square fa-2x"></i> <span class="network-name"></span></a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-linkedin fa-fw fa-4x"></i> <span class="network-name"></span></a>
+                            <a href="#"><i class="fa fa-linkedin fa-fw fa-2x"></i> <span class="network-name"></span></a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-youtube-play fa-4x"></i> <span class="network-name"></span></a>
+                            <a href="#"><i class="fa fa-youtube-play fa-2x"></i> <span class="network-name"></span></a>
                         </li>
-                    </ul>
+                    </ul>-->
                 </div>
             </div>
         </div>
@@ -405,8 +429,46 @@
 
     <!-- Footer -->
     <footer>
-        <div class="container text-center">
+        <div class="text-center">
+            <div class="footer-section">
+                <ul class="list-inline banner-social-buttons">
+                    <li>
+                        <a class="footer-color" href="https://web.facebook.com/isamcorp"><i class="fa fa-facebook-square fa-3x"></i></a>
+                    </li>
+                    <li>
+                        <a class="footer-color"  href="#"><i class="fa fa-linkedin fa-fw fa-3x"></i></a>
+                    </li>
+                    <li>
+                        <a class="footer-color"  href="#"><i class="fa fa-youtube-play fa-3x"></i></a>
+                    </li>
+                </ul>
+            <!--<div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="col-md-4">
+                            <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                                <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </div>
+                        <div class="col-md-4">
+                            <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                                <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </div>
+                        <div class="col-md-4">
+                            <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                                <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
+                            </span>
+                            <img class="img-circle" src="public/images/Angular.png">
+                        </div>
+                    </div>
+                </div>
+            </div>-->
             <p>Copyright &copy; ISAMCORP 2017</p>
+            </div>
         </div>
     </footer>
 
@@ -416,10 +478,6 @@
     <script src="public/bootstrap/js/bootstrap.min.js"></script>
     <!-- Plugin JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
-    <!--<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDsHSnyZ60plPdDvhe3Pts8u9Vno6LXm14&callback=initMap">
-    </script>-->
-    <!-- Theme grayscale JavaScript -->
     <script src="public/grayscale/js/grayscale.js"></script>
   </body>
 </html>

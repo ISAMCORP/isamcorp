@@ -25,3 +25,18 @@ $(function() {
 $('.navbar-collapse ul li a').click(function() {
     $(".navbar-collapse").collapse('hide');
 });
+// contaner load 
+window.onload = function(){
+    var contenedor = document.getElementById('contenedor_carga');
+    contenedor.style.visibility = 'hidden';
+    contenedor.style.opacity = '0';
+}
+jQuery(function($) {
+	//#main-slider
+	var slideHeight = $(window).height();
+	$('#home-slider .item').css('height',slideHeight);
+
+	$(window).resize(function(){'use strict',
+		$('#home-slider .item').css('height',slideHeight);
+	});
+})
