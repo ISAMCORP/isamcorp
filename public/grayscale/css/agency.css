@@ -238,7 +238,7 @@ div.service-desc {
   font-size: 14px;
   font-weight: 600;
   padding:14px 40px;
-  border: 1px solid #6e6d6c;
+  border: 1px solid #fff;
   border-radius: 4px;
   margin-top: 40px;
   text-transform: none;
@@ -264,7 +264,7 @@ div.service-desc {
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(0,0,0,.7);
+  background: rgba(0,0,0,.5);
 }
 
 .carousel-fade .carousel-inner .active {

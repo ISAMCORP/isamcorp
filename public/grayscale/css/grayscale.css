@@ -150,6 +150,11 @@ a:focus {
 .intro .intro-body .intro-text {
   font-size: 16px;
 }
+.intro-text {
+  font-size: 18px;
+  color: #74D1CA;
+  font: bold;
+}
 @media (min-width: 768px) {
   .intro {
     height: 100%;
@@ -160,6 +165,9 @@ a:focus {
   }
   .intro .intro-body .intro-text {
     font-size: 21px;
+  }
+  .intro-text {
+    font-size: 25px;
   }
 }
 .btn-circle {
@@ -206,6 +214,16 @@ a:focus {
   background-size: cover;
   -o-background-size: cover;
 }
+.about-section {
+  width: 100%;
+  padding: 50px 0;
+  color: #425864;
+  background-color: #F0F0F0;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
 .service-section {
   width: 100%;
   padding: 50px 0;
@@ -233,6 +251,9 @@ a:focus {
 }*/
 @media (min-width: 767px) {
   .content-section {
+    padding-top: 80px;
+  }
+  .about-section {
     padding-top: 80px;
   }
   .contact-section {
