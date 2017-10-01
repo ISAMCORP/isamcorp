@@ -46,7 +46,7 @@ ul.social-buttons li a:active {
 }
 .brand-logo-menu {
   height: auto;
-  width: 150px;
+  width: 130px;
 }
 @media (min-width: 768px) {
   .brand-logo {
@@ -81,7 +81,7 @@ div.service-gallery img {
 .service-heading {
   margin: 0 0 20px;
   text-transform: none;
-  color: #009688;
+  color: #00C7B7;
   text-align: center;
 }
 
